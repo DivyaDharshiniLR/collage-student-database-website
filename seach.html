@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<meta charset="utf-8"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href= 
+"//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"> 
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script> 
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+
+	<script> 
+		$(function () { 
+			var subjects = [ 
+				"pooja", 
+				"divyaaa", 
+				"affreen", 
+				"jaya", 
+				"aashik", 
+				"nisha", 
+				"usha" 
+			]; 
+			$("#GFG").autocomplete({ 
+				source: subjects 
+			}); 
+
+			$("#btn").on('click', function() { 
+				$("#GFG").autocomplete("search", "J"); 
+			}) 
+		}); 
+	</script> 
+</head> 
+
+<body> 
+	<center> 
+		<div class="ui-widget"> 
+			 
+			
+
+			<label for="GFG"> 
+				Select Subject: 
+			</label> 
+
+			<input id="GFG"> 
+		</div> 
+
+		<input type="button" id="btn"
+			style="padding: 5px 15px; margin-top: 40px;"
+			value="Search the names"> 
+	</center> 
+</body> 
+
+</html>

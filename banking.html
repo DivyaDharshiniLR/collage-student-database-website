@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Veltech multitech Dr.Rangarajan Dr.sakunthala Engineerig collage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+  </head>
+
+<body>
+
+  <!-- Sub Header -->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p>This is an student database of veltech multitech</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        VELTECH MULTITECH
+                    </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                          <li><a href="personal.html">personal DETAILS</a></li>
+                          <li ><a href="acadmeicss.html">ACADEMICS DETAILS</a></li>
+                         
+                          <li c><a href="contact.html">contact DETAILS</a></li> 
+                          <li><a href="banking.html"> banking details</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <section class="section main-banner" id="top" data-section="section1">
+    <img id="bg-image" src="clg.jpg" alt="Background Image" style="width: max-content;height: max-content;">
+    
+
+    <div class="video-overlay header-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="caption">
+                <table>
+                    <tr>
+                        <td class="font" style="color: white;">Account number:</td>
+                        <td class="table"><input type="text" name="account_number" placeholder="your account no" required></td>
+                    </tr>
+                    <tr>
+                        <td class="font" style="color: white;"> Bank name:</td>
+                        <td>
+                            <select id="bankSelect" onchange="showOtherBankInput(this)">
+                                <option>Indian bank</option>
+                                <option>State bank of india</option>
+                                <option>Bank of baroda</option>
+                                <option>South indian bank</option>
+                                <option>ICICI bank</option>
+                                <option>Karur vysya bank</option>
+                                <option>Canara bank</option>
+                                <option>HDFC bank</option>
+                                <option>city union bank</option>
+                                <option>others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="otherBank">
+                        <td class="font" style="color: white;">Other bank name:</td>
+                        <td class="table"><input type="text" id="otherBankInput" name="other_bank_name" placeholder="Type bank name"></td>
+                    </tr>
+                    <tr>
+                        <td class="font" style="color: white;">Branch name:</td>
+                        <td class="table"><input type="text" name="branch_name" placeholder="bank branch name"></td>
+                    </tr>
+                    <tr>
+                        <td class="font" style="color: white;">IFSC code:</td>
+                        <td class="table"><input type="text" name="ifsc_code" placeholder="bank IFSC number"></td>
+                    </tr>
+                    <tr>
+                        <td class="font" style="color: white;">MICR number:</td>
+                        <td class="table"><input type="text" name="micr_number" placeholder="MICR no"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="table"><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            
+                <script>
+                    function showOtherBankInput(selectElement) {
+                        var otherBankInput = document.getElementById('otherBank');
+                        var otherBankSelect = document.getElementById('otherBankInput');
+                        if (selectElement.value === 'others') {
+                            otherBankInput.style.display = 'table-row';
+                        } else {
+                            otherBankInput.style.display = 'none';
+                            otherBankSelect.value = '';
+                        }
+                    }
+            
+                    // Call the function initially to check the default value
+                    showOtherBankInput(document.getElementById('bankSelect'));
+                </script>
+            </body>
+            </html>
